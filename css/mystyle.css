@@ -1,0 +1,440 @@
+/*##################################################
+BOOTSTRAP SPECIFIC - Modifying the stolen code...
+##################################################*/
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.row:before, .row:after {
+    content: " ";
+    display: table;
+}
+
+.col{
+    border: 1px gray solid;
+}
+
+/*##################################################
+NAVIGATION - Nuke it from orbit. It's the only way
+to be sure
+##################################################*/
+
+.navigation {
+    list-style: none; 
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: center;
+    /*border-bottom: 1px solid #777;
+    border-top: 1px solid #777;*/
+    margin-top: 5px;
+    padding: 20px;
+}
+
+.navigation a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+	line-height: 45px;
+    letter-spacing: 2px;
+    /*padding: 1em 3em;*/
+    transition: 0.4s;
+    font-family: "Raleway";
+}
+
+.navigation li a {
+	margin: 0 25px;
+	padding: 5px;
+	vertical-align:middle;
+	border: 0 solid;
+	box-shadow: inset 0 0 20px rgba(0, 0, 0, 0);
+	outline: 1px solid;
+	outline-color: rgba(0, 0, 0, .5);
+	outline-offset: 0px;
+	text-shadow: none;
+	transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+} 
+
+.navigation li a:hover {
+	border: 1px solid;
+	box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(0, 0, 0, .2);
+	outline-color: rgba(0, 0, 0, 0);
+	outline-offset: 15px;
+	text-shadow: 1px 1px 2px #427388;
+}
+
+/*.navigation a:hover {
+    background: #ffffff;
+    padding: 25px 10px;
+    color: #EEA200;
+}*/
+
+/*##################################################
+HEADERS - Long way to the top if you wanna rock
+n roll
+##################################################*/
+
+#title {
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 4px;
+    line-height: 1.2;
+    text-align: center;
+     font-size: 55px;
+}
+
+.page-header {
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 4px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+#title h1 {
+    font-size: 1.6em;
+    font-family: "Lato";
+    font-weight: 900;
+}
+
+h1 small {
+    font-size: 16px;
+    letter-spacing: .5px;
+    font-family: "Poppins";
+}
+
+.jumbotron {
+    background-image: url("/Users/kylew/Desktop/EDPS 6440/comp.png");
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    color: white;
+    min-height: 400px;
+}
+
+/*
+.well {
+    margin-bottom: 40px;
+    background-color: #f5f5f5;
+    border: 1px solid #e3e3e3;
+    min-height: 20px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+}
+
+.well-lg {
+    padding: 24px;
+    border-radius: 6px;
+}
+*/
+
+#aboutme p {
+    font-family: "Lato"
+}
+
+.portfolio-cards{
+	margin-bottom: 15px;
+}
+
+/*##################################################
+SECTION TITLES - no comment
+##################################################*/
+
+.section-title{
+	color: #0e0e0e;
+	position: relative;
+    margin-bottom: 1em;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.section-title:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    border-bottom: 4px solid #EAEEEF;
+}
+
+.section-title span {
+    position: relative;
+    display: inline-block;
+    padding-right: 1.4em;
+    background: #fff;
+}
+
+/*##################################################
+SERVICES Reasons you might hire me!
+##################################################*/
+
+.services {
+    text-align: center;
+}
+
+.services p {
+    margin-top: .4em;
+    color: #96A5A8;
+}
+
+.services h4{
+    font-family: "Poppins";
+    font-weight:800;
+    margin-top: 10px;
+}
+
+
+/*##################################################
+FUN FACTS OR COOL NUMBERS Because hard data is good
+##################################################*/
+
+.fun-fact {
+    padding: 2em 1.2em 4em 0;
+	display:flex;
+    align-items:center;
+}
+
+.fun-fact h4 {
+    margin: 5px 0 0 20px;
+    font-size: 26px;
+    line-height: 1.2;
+    font-weight: 100;
+}
+
+.fun-fact img {
+    display: block;
+    margin-bottom: 12px;
+    max-width: 70px;
+}
+
+.fun-fact img:before {
+    margin: 0 .2em;
+    display: inline-block;
+}
+
+/*##################################################
+FOOTER - every website has feet so it needs shoes!
+##################################################*/
+
+#ContactMe p {
+    display: inline;
+    margin: 0 auto;
+}
+
+footer{
+	background-color:#4B515D;
+	color: #fff;
+}
+
+footer hr{
+	background-color: #fff;
+}
+
+.profile-pic{
+	float:left;
+	padding: 0 20px 5px 0;
+	max-width: 60%; 
+	height: auto;
+}
+
+.display-3 {
+    font-family: "Lato";
+}
+
+h4 {
+    font-size: 1.00em;
+}
+
+
+.profile-pic-resume{
+	display: block;
+	margin: 0 auto;
+	padding: 5px 0px 5px 0;
+	max-width: 35%; 
+	height: auto;
+}
+
+/*##################################################
+RESUME - nuff said!
+##################################################*/
+
+.timeline h2 {
+    position: relative;
+    margin-bottom: 2em;
+	text-transform: uppercase;
+}
+
+h2 {
+    font-size: 1.50em;
+    margin: 1.0em 0 0.6em 0;
+    font-weight: 800;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 112px;
+    padding-bottom: 8px;
+}
+
+.event {
+    position: relative;
+    padding: 26px 32px;
+    margin-bottom: 3em;
+    background: #ffffff;
+    border: 3px solid #DDE4E6;
+    border-radius: 6px;
+}
+
+.event:before {
+    border-right-color: #DDE4E6;
+    border-width: 15px;
+    margin-top: -15px;
+}
+
+.event:after, .event:before {
+    right: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.event .date {
+    position: absolute;
+    top: 45%;
+    margin-top: -24px;
+    left: -106px;
+    width: 68px;
+    line-height: 58px;
+    text-align: center;
+    background: #5BCF80;
+    display: block;
+    z-index: 120;
+    color: #fff;
+    border-radius: 50%;
+    border: 5px solid #FFF;
+    font-family: "Din Condensed";
+    font-weight: 400;
+}
+
+.event.current .date {
+    border-color: #345;
+    outline: 2px solid #FFF;
+    background-color: #345;
+}
+
+.event h5 {
+    margin: 0;
+    padding: 0 0 .3em 0;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #d1dbdc;
+}
+
+.event p {
+    margin: .6em 0 .2em 0;
+}
+
+.event p:before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: -72px;
+    height: 130%;
+    width: 4px;
+    background: #DDE4E6;
+}
+
+.skillset {
+    padding: 0 0 2.2em 0;
+}
+
+.skill-unit {
+    padding-bottom: 0;
+}
+
+.skill-unit .bar {
+    position: relative;
+    width: 100%;
+    height: 36px;
+}
+
+.skill-unit .bar .progress {
+    background: #5BCF80;
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-radius: 4px;
+}
+
+.skill-unit h4 {
+    margin-bottom: -30px;
+    font-weight: 800;
+    color: #fff;
+    position: relative;
+    z-index: 100;
+    padding-left: 14px;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 767px){
+.skill-unit h4 {
+    font-size: 14px;
+    margin: 1em 0 0 0;
+    color: #345;
+    padding: 0;
+    font-weight: 400;
+}
+	
+.skill-unit .bar {
+	height: 6px;
+}
+}
+
+.download-button .button {
+    letter-spacing: 1px;
+    padding: 1.4em 3em 1.4em;
+    margin-top: 1em;
+}
+
+.button{
+	transition: color 0.1s, background-color .2s, border-color .2s;
+}
+
+a.button {
+    display: inline-block;
+    position: relative;
+    padding: 1em 2em 1em;
+    font-size: .925em;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1.2;
+    border: 0;
+    outline: 0;
+    background: #fff;
+    border: 2px solid #DDE4E6;
+    color: #6A7686;
+    text-shadow: none;
+    border-radius: 4px;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+a.button.primary:hover{
+	background: #098456;
+}
+
+a.button:hover{
+	color: #fff;
+}
