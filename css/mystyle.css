@@ -107,7 +107,7 @@ h1 small {
 }
 
 .jumbotron {
-    background-image: url("images/comp.png");
+    background-image: url("/Users/kylew/Desktop/Portfolio/images/comp.png");
     background-position: center;
     -webkit-background-size: cover;
     background-size: cover;
@@ -115,7 +115,6 @@ h1 small {
     min-height: 400px;
 }
 
-/*
 .well {
     margin-bottom: 40px;
     background-color: #f5f5f5;
@@ -128,7 +127,7 @@ h1 small {
     padding: 24px;
     border-radius: 6px;
 }
-*/
+
 
 #aboutme p {
     font-family: "Lato"
@@ -137,6 +136,31 @@ h1 small {
 .portfolio-cards{
 	margin-bottom: 15px;
 }
+
+.img-title {
+    position: absolute;
+    top: 0;
+	left:0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    opacity: 0.6;
+    /*display: none; /* comment this out for CSS hover */
+    background-color: #333;
+    /*transition: all 0.5s ease;*/
+}
+
+    .img-title h5 {
+        position: absolute;
+        color: #fff;
+        top: 33%;
+        width: 100%;
+        text-align: center;
+		border: 1px solid #fff;
+    }
+
+	.img-
 
 /*##################################################
 SECTION TITLES - no comment
@@ -254,6 +278,9 @@ h4 {
 	padding: 5px 0px 5px 0;
 	max-width: 35%; 
 	height: auto;
+	border: 1px solid grey;
+	border-radius: 5px;
+	
 }
 
 /*##################################################
@@ -285,6 +312,7 @@ h2 {
     background: #ffffff;
     border: 3px solid #DDE4E6;
     border-radius: 6px;
+	cursor: pointer;
 }
 
 .event:before {
@@ -411,20 +439,17 @@ h2 {
 }
 
 a.button {
-    display: inline-block;
-    position: relative;
-    padding: 1em 2em 1em;
-    font-size: .925em;
-    font-weight: 800;
-    text-transform: uppercase;
-    line-height: 1.2;
-    border: 0;
-    outline: 0;
-    background: #fff;
-    border: 2px solid #DDE4E6;
-    color: #6A7686;
-    text-shadow: none;
-    border-radius: 4px;
+	display: inline-block;
+	margin: 0 25px;
+	padding: 5px;
+	vertical-align:middle;
+	border: 0 solid;
+	box-shadow: inset 0 0 20px rgba(0, 0, 0, 0);
+	outline: 1px solid;
+	outline-color: rgba(0, 0, 0, .5);
+	outline-offset: 0px;
+	text-shadow: none;
+	transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 a:hover{
@@ -432,9 +457,28 @@ a:hover{
 }
 
 a.button.primary:hover{
-	background: #098456;
+	background: #fff;
 }
 
 a.button:hover{
-	color: #fff;
+	border: 1px solid;
+	box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(0, 0, 0, .2);
+	outline-color: rgba(0, 0, 0, 0);
+	outline-offset: 15px;
+	text-shadow: 1px 1px 2px #427388;
 }
+
+/*##################################################
+CONTACT - I really want that job!
+##################################################*/
+
+.red{
+    color:red;
+    }
+.form-area
+{
+    background-color: #FAFAFA;
+	padding: 10px 40px 60px;
+	margin: 10px 0px 60px;
+	border: 1px solid GREY;
+	}
