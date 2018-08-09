@@ -478,6 +478,28 @@ PORTFOLIO - Showing the Goods
 	font-size: 1.5em
 }
 
+.scrollToTop{
+    width:100px; 
+    height:130px;
+    padding:10px; 
+    text-align:center; 
+    background: whiteSmoke;
+    font-weight: bold;
+    color: #444;
+    text-decoration: none;
+    position:fixed;
+    top:75px;
+    right:40px;
+    display:none;
+    background: url('arrow_up.png') no-repeat 0px 20px;
+}
+.scrollToTop:hover{
+    text-decoration:none;
+}
+
+@media only screen and (max-width: 959px) {
+    .scrollToTop{ display: none !important; }
+}
 /*##################################################
 CONTACT - I really want that job!
 ##################################################*/
